@@ -14,18 +14,22 @@ function pari_dispari(user) {
     user = Number(prompt('Inserisci un numero da 1 a 5'));
     pc = Math.floor(Math.random() * 5) + 1;
     sum = user + pc;
+    console.log(`numero generato: ${pc}`);
+    console.log(sum);
     
-    if (sum % 2 == 0) {
-        alert('è pari');
+    if ((sum % 2 == 0 && evenOdd === 'pari') || (sum % 2 !== 0 && evenOdd === 'dispari')) {
+        alert('Hai vinto!')
     }
     else {
-        alert('è dispari');
+        alert('Hai perso!');
     }
 }
 
 // variazione per permettere di accedere alla funzione pari_dispari
 let evenOdd = prompt('pari o dispari?');
+console.log(evenOdd);
 
+// if statement per assicurarsi che i prompt giusti facciano partire la funzione
 if (evenOdd === 'pari' || evenOdd === 'dispari'){
     pari_dispari();
 }
