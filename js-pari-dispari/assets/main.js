@@ -9,13 +9,12 @@ console.log('im alive too');
 // resto %;
 // prompt;
 
+// creazione della funzione che verifica se il risultato è pari o dispari
 function pari_dispari(user) {
     user = Number(prompt('Inserisci un numero da 1 a 5'));
     pc = Math.floor(Math.random() * 5) + 1;
-    console.log(`somma generata: ${pc}`);
     sum = user + pc;
-    console.log(sum);
-
+    
     if (sum % 2 == 0) {
         alert('è pari');
     }
@@ -23,4 +22,13 @@ function pari_dispari(user) {
         alert('è dispari');
     }
 }
-pari_dispari();
+
+// variazione per permettere di accedere alla funzione pari_dispari
+let evenOdd = prompt('pari o dispari?');
+
+if (evenOdd === 'pari' || evenOdd === 'dispari'){
+    pari_dispari();
+}
+else {
+    alert('Errore: assicurati di scrivere bene "pari" o "dispari"!');
+}
