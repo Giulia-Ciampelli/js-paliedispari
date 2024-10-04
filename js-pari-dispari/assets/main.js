@@ -12,8 +12,15 @@ console.log('im alive too');
 function pari_dispari(user) {
     user = Number(prompt('Inserisci un numero da 1 a 5'));
     pc = Math.floor(Math.random() * 5) + 1;
-    console.log(pc);
+    console.log(`somma generata: ${pc}`);
     sum = user + pc;
     console.log(sum);
+
+    if (sum % 2 == 0) {
+        alert('è pari');
+    }
+    else {
+        alert('è dispari');
+    }
 }
 pari_dispari();
