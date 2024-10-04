@@ -13,7 +13,7 @@ console.log('im alive');
 
 // funzione in cui si verifica una stringa con la metà al contrario di sè stessa
 function seiPalindroma(word) {
-    if (word.split().reverse().join() === word) {
+    if (word.split('').reverse().join('') === word) {
         console.log('La parola è palindroma');
     }
     else {
@@ -22,3 +22,4 @@ function seiPalindroma(word) {
 }
 
 console.log(seiPalindroma('anna'));
+console.log(seiPalindroma('bici'));
