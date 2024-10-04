@@ -3,7 +3,6 @@
 
 // funzione in cui si verifica una stringa con la metà al contrario di sè stessa
 function seiPalindroma(word) {
-    word = prompt('Inserisci una parola');
     if (word.split('').reverse().join('') === word) {
         alert('La parola è palindroma');
     }
@@ -11,4 +10,4 @@ function seiPalindroma(word) {
         alert('La parola non è palindroma');
     }
 }
-seiPalindroma();
+seiPalindroma(word = prompt('Inserisci una parola'));
