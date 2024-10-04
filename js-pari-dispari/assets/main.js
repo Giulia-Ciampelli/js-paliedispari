@@ -7,3 +7,13 @@ console.log('im alive too');
 // Math.floor(Math.random());
 // somma aritmetica +;
 // resto %;
+// prompt;
+
+function pari_dispari(user) {
+    user = Number(prompt('Inserisci un numero da 1 a 5'));
+    pc = Math.floor(Math.random() * 5) + 1;
+    console.log(pc);
+    sum = user + pc;
+    console.log(sum);
+}
+pari_dispari();
